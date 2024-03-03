@@ -1,0 +1,192 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ededee;
+}
+/* Contenedor Black Friday */
+.bienvenidos,
+.nota_perfecta {
+  background-color: #1b6395;
+}
+
+/* Linea Blanca */
+.linea {
+  width: 100%;
+}
+
+.linea div {
+  border-top: 0.1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Logo */
+.icon_perfil {
+  font-size: 24px;
+}
+
+.bi-person {
+  font-size: 30px;
+  color: #f8f9fa;
+}
+.bi-cart-check {
+  font-size: 30px;
+  color: #f8f9fa;
+}
+
+/* Efecto de linea Barra de Navegación */
+.navegacion .nav-item {
+  position: relative;
+}
+.navegacion.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1b6395;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.navegacion .nav-item:hover::after {
+  transform: scaleX(1);
+}
+/* Efecto color anaranjado a los a */
+.navegacion a {
+  text-decoration: none;
+  transition: transform 0.1s ease-in-out;
+}
+.navegacion a:hover {
+  transform: scale(1.1);
+  color: #f07818;
+}
+/* Responsive Celular */
+@media (max-width: 575px) {
+  /* barra negra */
+  .primer_segmento .d-flex {
+    padding: 5px;
+  }
+  /* Desde el 15% Menos */
+  .primer_segmento .texto_centro {
+    display: flex;
+  }
+
+  .busqueda {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bi-person {
+    font-size: 30px;
+    color: #f8f9fa;
+  }
+  .bi-cart-check {
+    font-size: 30px;
+    color: #f8f9fa;
+  }
+
+  .bi-arrow-right {
+    display: none;
+  }
+  /* Barra de Navegación */
+  .navbar-collapse {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .navbar-nav {
+    text-align: center;
+    width: auto;
+  }
+  .navbar-nav .nav-item {
+    width: auto;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar-text {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
+/* Main */
+
+/* Efectos Botones */
+.swiper-slide .btn {
+  transition: transform 0.3s ease;
+}
+/* Efectos Botones */
+.swiper-slide .btn:hover {
+  background-color: #ededee;
+  color: #f07818;
+  box-shadow: 0px 1px 1px #f07818;
+  transform: scale(1.1);
+}
+/* Alto y Ancho de la Carta */
+section .card {
+  padding: 70px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Aside */
+aside .card {
+  padding: 0px;
+}
+/* Efectos Botones */
+aside .card .btn {
+  transition: transform 0.3s ease;
+}
+/* Efectos Botones */
+aside .card .btn:hover {
+  background-color: #ededee;
+  color: #f07818;
+  box-shadow: 0px 1px 1px #f07818;
+  transform: perspective(1000px) rotateY(30deg);
+}
+/* Texto Ofertas */
+aside .ofertas {
+  color: #f07818;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer_container {
+  display: flex;
+  align-items: center;
+}
+/* Ajusta el espaciado entre el ícono y el texto */
+.footer_container .bi {
+  margin-right: 10px;
+}
+
+.footer_container .text {
+  flex-grow: 1;
+}
+/* Iconos */
+.footer_container .bi {
+  font-size: 35px;
+  color: #1b6395;
+}
+/* Texto h6 */
+.footer_container .text h6 {
+  color: #1b6395;
+}
+/* Texto p */
+.footer_container .text p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-style: italic;
+}
+/* Div Columnas */
+footer .col-md-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
